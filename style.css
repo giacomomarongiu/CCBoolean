@@ -1,0 +1,124 @@
+
+
+body{ 
+    /* Indicazioni generiche per sfondo e font */
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family:Arial, Helvetica, sans-serif, Times, 'Times New Roman', serif;
+} 
+
+
+.contenitore{
+    /* Contenitore delle nostre varie sezioni */
+    width: 1000px;
+    margin:auto;
+    background-color: rgba(0, 0, 0, 0.412);
+    border-radius: 10px 10px 10px 10px; /*Angelo smussati*/
+    margin-top: 2%; /*Un po' più margine rispetto a quello di default*/
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+
+
+.logo{
+    width: 200px;
+    margin:auto;
+    display: block;
+}
+
+.logo_testo{
+    text-align: center;
+    font-size: 25px;
+    color: chartreuse;
+    margin-bottom: 5px;
+}
+
+
+
+nav{
+    background-color: chartreuse;
+    text-align: center;   /* Allineamento tasti al centro */
+    padding-top: 10px;/* Aggiustamenti nella barra di navigazione */
+    padding-bottom: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
+
+
+main{
+    color: white; /*Colore utile solo nel main*/
+    margin-left: 10%; /*Un po' più di margine*/
+}
+
+
+ul{
+    padding: 0;
+    /*Necessario per renderlo allineato alla nav*/
+}
+
+li {
+    list-style-type: square;
+    padding-left: 0%;
+    margin-top: 15px;
+    list-style-position: inside;
+ }
+
+ li > h3{
+        /*Necessario per avere lo "square" accanto */
+        display: inline-block;
+        margin: 0px;
+ }
+
+p{
+    /*Aggiustamenti estetici e di struttura*/
+    font-size: small;
+    margin: 2px;
+}
+
+.Via{
+    display: inline-block;
+}
+
+.carica{
+    display: block;
+}
+
+
+ span::before{
+       /*Freccia*/
+    content: "\21A6";
+}
+
+
+.barra1, .barra2, .barra3{
+    /*caratteristiche comuni alle tre classi barra*/
+    border-radius: 5px 5px 5px 5px;
+    height:20px;
+}
+
+     /*Adesso le barre con le caratteristiche non condivise*/
+
+.barra1{
+    background:rgb(215, 195, 14);
+    width: 200px;
+}
+
+.barra2{
+    background:rgb(64, 215, 14);
+    width: 300px;
+}
+
+.barra3{
+    background:rgb(215, 14, 14);
+    width: 100px;
+}
+
+::marker {
+     /*Aggiustamenti estetici*/
+    font-size: 30px;
+  }
+
+
